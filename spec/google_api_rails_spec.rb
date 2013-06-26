@@ -41,6 +41,8 @@ describe GoogleApi, "config" do
       GoogleApi.config do |config|
         config.client_id = '123'
         config.client_secret = '123'
+        config.application_name = '123'
+        config.application_version = '123'
       end
     }.should_not raise_error(ArgumentError)
   end

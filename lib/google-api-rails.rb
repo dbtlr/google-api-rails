@@ -26,11 +26,9 @@ module GoogleApi
     raise Rails::Exception::BadApplicationName.new if @@application_name.nil? || @@application_name.empty?
     raise Rails::Exception::BadApplicationVersion.new if @@application_version.nil? || @@application_version.empty?
 
-    @@client = Google::APIClient.new
+    @@client = Google::APIClient.new(:application_name => @@application_name, :application_version => @@application_version)
     @@client.authorization.client_id = @@client_id
     @@client.authorization.client_secret = @@client_secret
-    @@client.authorization.application_name = @@application_name
-    @@client.authorization.application_version = @@application_version
     @@client.authorization.redirect_uri = @@redirect_uri unless @@redirect_uri.empty? || @@redirect_uri.empty?
     @@client.authorization.scope = @@scope unless @@scope.empty? || @@scope.nil?
   end
