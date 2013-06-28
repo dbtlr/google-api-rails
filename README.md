@@ -1,4 +1,4 @@
-# Google API Wrapper for Ruby on Rails [!https://travis-ci.org/dbtlr/google-api-rails.png!](https://travis-ci.org/dbtlr/google-api-rails)
+# Google API Wrapper for Ruby on Rails [!(https://travis-ci.org/dbtlr/google-api-rails.png)](https://travis-ci.org/dbtlr/google-api-rails)
 
 This wraps the official [Google Ruby API client](https://github.com/google/google-api-ruby-client). All documentation for interacting with the actual client can be found there.
 
