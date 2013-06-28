@@ -1,8 +1,8 @@
-== Google API Wrapper for Ruby on Rails
+# Google API Wrapper for Ruby on Rails
 
 This wraps the official [Google Ruby API client](https://github.com/google/google-api-ruby-client). All documentation for interacting with the actual client can be found there.
 
-=== Installation
+## Installation
 
 Add the gem to your Gemfile:
 
@@ -20,7 +20,7 @@ GoogleApi.config do |config|
 end
 ```
 
-=== Getting Started
+## Getting Started
 
 To use the Ruby API client, simple access it through the wrapper like so:
 
@@ -32,6 +32,6 @@ result = client.execute(
 )
 ```
 
-=== About This Gem
+## About This Gem
 
 I wrote this simply to have the convenience of keeping my Google API config in an initializer, instead of all over my apps. If you know of a better way or see something I missed, feel free to submit an issue or pull request.
