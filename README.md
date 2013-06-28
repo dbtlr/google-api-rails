@@ -14,7 +14,7 @@ Create an initializer, for instance google-api-rails.rb with the following:
 
 ```ruby
 GoogleApi.config do |config|
-  config.client_id = "<Your Google API Client Id"
+  config.client_id = "<Your Google API Client Id>"
   config.client_secret = "<Your Application Secret>"
   config.application_name = "<Your Application Name>"
 end
@@ -26,7 +26,7 @@ To use the Ruby API client, simple access it through the wrapper like so:
 
 ```ruby
 # Make an API call
-result = client.execute(
+result = GoogleApi.client.execute(
   :api_method => plus.activities.list,
   :parameters => {'collection' => 'public', 'userId' => 'me'}
 )
